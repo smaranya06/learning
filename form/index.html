@@ -13,44 +13,42 @@
     </h1>
     <form action="post">
         <div style="padding: 10px;">
-            <label style="margin-left: 130px;" for="name">First name :</label>
-            <input style="margin-left: 85px;" type="text" id="name" name="name" placeholder="         Enter first name">
+            <label style="margin-left: 400px;" for="name">First name :</label>
+            <input style="margin-left: 40px;" type="text" id="name" name="name" placeholder="Enter first name">
         </div>
         <div style="padding: 10px;">
-            <label style="margin-left: 150px;" for="name">Last name :</label>
-            <input style="margin-left: 82px;" type="text" id="name" name="name" placeholder="         Enter first name">
+            <label style="margin-left: 400px;" for="name">Last name :</label>
+            <input style="margin-left: 45px;" type="text" id="name" name="name" placeholder="Enter last name">
         </div>
         <div style="padding: 10px;">
-            <label style="margin-left: 150px;" for="name">Gender :</label>
-            <input style="margin-left: 82px;" type="radio" id="male" name="gender" value="male">
+            <label style="margin-left: 400px;" for="name">Gender :</label>
+            <input style="margin-left: 60px;" type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input style="margin-left: 32px;" type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label>
             <input style="margin-left: 32px;" type="radio" id="other" name="gender" value="other">
-            <label for="other">other</label>
+            <label for="other">Other</label>
         </div>
         <div style="padding: 10px;">
-            <label style="margin-left: 150px;" for="age">Age:</label>
-            <input style="margin-left:112px; width:150px;" type="number" id="age" name="age" min="1" max="130"
-                placeholder="        Enter your age">
+            <label style="margin-left: 400px;" for="age">Age :</label>
+            <input style="margin-left: 72px; width:150px;" type="number" id="age" name="age" min="1" max="130"
+                placeholder="Enter your age">
         </div>
         <div style="padding: 10px;">
-            <label style="margin-left: 150px;" for="name">Email :</label>
-            <input style="margin-left: 82px;" type="text" id="name" name="name" placeholder="Enter email address">
+            <label style="margin-left: 400px;" for="name">Email :</label>
+            <input style="margin-left: 58px;" type="text" id="name" name="name" placeholder="Enter email address">
         </div>
         <div style="padding: 10px;">
-            <label style="margin-left: 130px;" for="name">Country :</label>
-            <input style="margin-left: 85px;" type="text" id="name" name="name" placeholder="                 India"
-                disabled>
+            <label style="margin-left: 400px;" for="name">Country :</label>
+            <input style="margin-left: 40px;" type="text" id="name" name="name" placeholder="India" disabled>
         </div>
         <div style="padding: 10px;">
-            <label style="margin-left: 130px;" for="name">Country :</label>
-            <input style="margin-left: 85px;" type="text" id="name" name="name" placeholder="            West Bengal"
-                disabled>
+            <label style="margin-left: 400px;" for="name">State :</label>
+            <input style="margin-left: 62px;" type="text" id="name" name="name" placeholder="West Bengal" disabled>
         </div>
         <div style="padding: 10px;">
-            <label  style="margin-left: 150px;" for="name">District : </label>
-            <select style="margin-left: 90px;" name="district">
+            <label style="margin-left: 400px;" for="name">District :</label>
+            <select style="margin-left: 44px;" name="district">
                 <option value="">Select District</option>
                 <option value="alipurduar">Alipurduar</option>
                 <option value="bankura">Bankura</option>
@@ -76,6 +74,40 @@
                 <option value="south_24_parganas">South 24 Parganas</option>
                 <option value="uttar_dinajpur">Uttar Dinajpur</option>
             </select>
+        </div>
+        <div style="padding: 10px;">
+            <label style="margin-left: 400px;" for="name">Pincode :</label>
+            <input style="margin-left: 40px;" type="text" id="name" name="name" placeholder="Enter your pin">
+        </div>
+        <div style="padding: 10px;">
+            <label style="margin-left: 400px;" for="occupation">Occupation :</label>
+            <select style="margin-left: 28px;" name="occupation" id="occupation">
+                <option value="">Select Occupation</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="engineer">Engineer</option>
+                <option value="doctor">Doctor</option>
+                <option value="lawyer">Lawyer</option>
+                <option value="business">Business</option>
+                <option value="farmer">Farmer</option>
+                <option value="government_service">Government Service</option>
+                <option value="private_service">Private Service</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="retired">Retired</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label style="margin-left: 400px;" for="name">Feedback :</label>
+            <br>
+            <textarea style="margin-left: 480px; resize: none;" name="comment" rows="6" cols="50"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div style="padding: 10px;">
+            <center>
+                <input style="margin-left: 95px;width: 125px;height: 35px;" type="button" id="name" name="name"
+                    value="Submit">
+            </center>
         </div>
     </form>
 </body>
