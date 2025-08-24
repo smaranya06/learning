@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e0f2f7; /* Light blue background */
+    color: #333333; /* Dark gray text */
+    padding: 15px; /* Added padding for smaller screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.login-container {
+    background-color: #ffffff; /* White background for the form container */
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 450px; /* Max width for better form presentation */
+    text-align: center;
+}
+
+h1 {
+    color: #2a6f97; /* Dark blue for heading */
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+label {
+    display: block; /* Labels on their own line */
+    text-align: left; /* Align label text to the left */
+    margin-bottom: 8px;
+    color: #555555; /* Gray text color */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Adjust width for padding/border */
+    padding: 12px 10px;
+    border: 1px solid #a7d9f2; /* Light blue border */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.forgot-password-link {
+    color: #007bff; /* Standard blue link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-button-wrapper {
+    margin-bottom: 20px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2a6f97; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #1e5a7b; /* Darker blue on hover */
+}
+
+.signup-text {
+    margin-top: 15px;
+    color: #555555;
+}
+
+.signup-button-link {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.signup-button {
+    padding: 10px 20px;
+    background-color: #5cb85c; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
