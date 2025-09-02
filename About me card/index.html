@@ -7,130 +7,160 @@
     <title>Card</title>
     <style>
         body {
-            background-color: antiquewhite;
-
+            background-color: #e0f2f7; /* A soft, calming blue */
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh; /* Ensure body takes full viewport height */
         }
 
-        .box {
-            border: solid black 2px;
-            height: 700px;
+        .card {
+            border: solid 2px #333;
+            border-radius: 20px;
             width: 400px;
-            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
             overflow: hidden;
+            transition: transform 0.3s ease-in-out;
         }
 
-        img {
-            width: 98%;
-            height: 40%;
-            margin-top: 5px;
-            border-radius: 15px;
-            margin-left: 3.5px;
-            margin-right: 5px;
-            border: solid black 1px;
+        .card:hover {
+            transform: translateY(-10px);
         }
 
-        .content {
+        .card-image-container {
             padding: 10px;
-            margin-left: 10px;
-            justify-content: center;
-            align-items: center;
         }
 
-        .tags1 {
-            margin-top: 5px;
-            
+        .card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: solid 1px #ccc;
+        }
+
+        .card-content {
+            padding: 20px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .tag {
-            
-            border: solid rgb(183, 181, 181) 1px;
-            background-color: rgb(255, 254, 254);
-            color: rgba(3, 2, 2, 0.947);
-            padding: 10px;
-            border-radius: 15px;
-            margin-right: 15px;
-            margin-top: 10px;
-            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e9e9e9;
+            color: #444;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid #dcdcdc;
+            transition: background-color 0.3s;
         }
 
-        .buttonadjust {
-            padding-top: 20px;
+        .tag:hover {
+            background-color: #dcdcdc;
+        }
+
+        .card-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .card-description {
+            background-color: #fcf6e4;
+            color: #6a4a3a;
+            border: 1px solid #e1d8c7;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 15px;
+            line-height: 1.6;
+            height: 150px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #e1d8c7 transparent;
+        }
+
+        .card-description::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .card-description::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .card-description::-webkit-scrollbar-thumb {
+            background-color: #e1d8c7;
+            border-radius: 20px;
+            border: 2px solid #fcf6e4;
+        }
+
+        .button-container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            margin-top: 15px;
         }
 
-        .button {
-            background-color: rgb(202, 209, 236);
-            color: rgb(26, 4, 195);
-            padding: 10px;
-            border-radius: 150px;
+        .card-button {
+            background-color: #5d67e5;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
             border: none;
             cursor: pointer;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 45px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
-        .descriptionbox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .card-button:hover {
+            background-color: #4754d9;
+            transform: scale(1.05);
         }
 
-        .description {
-            background-color: rgb(240, 223, 188);
-            color: brown;
-            border: 2px solid rgb(133, 132, 132);
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            overflow: auto;
-            border-radius: 10px;
+        .card-button:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
 
 <body>
-    <div class="box">
-        <img src="image.jpg" alt="nature image">
-        <div class="content">
-            <div>
-                <div class="tags1">
-                    <span class="tag">
-                        c
-                    </span>
-                    <span class="tag">
-                        java
-                    </span>
-                    <span class="tag">
-                        html
-                    </span>
-                    <span class="tag">
-                        css
-                    </span>
-                </div>
-                <h1>About Me</h1>
-                <div class="descriptionbox">
-                    <div class="description">
-                        I'm a B.Tech CSE student at RCCIIT, driven by a passion for full-stack development. I enjoy
-                        building
-                        complete web applications from front to back, and I'm always looking for new technologies to
-                        learn. My
-                        skills in problem-solving, honed through daily coding challenges and competitive programming,
-                        are a huge
-                        asset in my projects. Outside of my studies, I'm a big enthusiast for outdoor games, which help
-                        me stay
-                        active and balance my time spent coding. I'm excited to continue growing my expertise and
-                        contribute to
-                        the world of software development.
-                    </div>
-                </div>
-                <div class="buttonadjust"><button class="button">read more</button></div>
+    <div class="card">
+        <div class="card-image-container">
+            <img class="card-image" src="image.jpg" alt="my image">
+        </div>
+        <div class="card-content">
+            <div class="tags">
+                <span class="tag">c</span>
+                <span class="tag">java</span>
+                <span class="tag">html</span>
+                <span class="tag">css</span>
+            </div>
+            <h1 class="card-title">About Me</h1>
+            <div class="card-description">
+                I'm a B.Tech CSE student at RCCIIT, driven by a passion for full-stack development. I enjoy
+                building complete web applications from front to back, and I'm always looking for new technologies to
+                learn. My skills in problem-solving, honed through daily coding challenges and competitive programming,
+                are a huge asset in my projects. Outside of my studies, I'm a big enthusiast for outdoor games, which
+                help me stay active and balance my time spent coding. I'm excited to continue growing my expertise and
+                contribute to the world of software development.
+            </div>
+            <div class="button-container">
+                <button class="card-button">read more</button>
             </div>
         </div>
     </div>
